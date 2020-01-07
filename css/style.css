@@ -291,9 +291,40 @@ blockquote .svg-inline--fa{
 
 /* Contact section */
 
-.form-horizontal{
-  background: #aaaaaa;
+.formrun{
+  width: 60%;
+  max-width: 700px;
+	margin: 0 auto 40px;
 }
+
+.form-box{
+  width: 100%;
+  position: relative;
+  margin: 15px 0;
+  
+}
+
+.form-box textarea,input[type='text']{
+  font: 15px/24px sans-serif;
+	box-sizing: border-box;
+	width: 100%;
+	margin: 8px 0;
+  padding: 6px;
+  padding-left: 40px;
+	border: 1px solid #1b2538;
+	border-radius: 4px;
+  outline: none;
+}
+
+.form-box i{
+  position: absolute;
+	top: 8px;
+	left: 0;
+	padding: 9px 8px;
+  color: #aaaaaa;
+}
+
+/* Footer */
 
 footer{
   background-color: #40474e;
@@ -302,7 +333,8 @@ footer{
   margin-top: 15px;
 }
 
-footer img{
+
+/* footer img{
   height: 40px;
   margin: 20px 0;
 }
@@ -324,7 +356,7 @@ hr.socket{
   width: 100%;
   border-top: 3px solid #666b71;
   margin-top: 40px;
-}
+} */
 
 /* Media queries */
 

@@ -247,20 +247,20 @@
     <!-- Form -->
     <form class="formrun" action="https://form.run/api/v1/r/o88zi1bsqip46e3ff0f40vme" method="post">
       <!-- ↓自由に要素を追加・編集することができます -->
-      <div>
-        <label>お名前</label>
-        <input name="お名前" type="text">
+      <div class="form-box">
+        <input placeholder="お名前" type="text">
+        <i class="fa fa-user fa-lg fa-fw" aria-hidden="true"></i>
       </div>
     
-      <div>
-        <label>メールアドレス [必須]</label>
-        <input name="メールアドレス" type="text" data-formrun-type="email" data-formrun-required>
+      <div class="form-box">
+        <input placeholder="E-Mail" type="text" data-formrun-type="email" data-formrun-required>
+        <i class="fa fa-envelope fa-lg fa-fw" aria-hidden="true"></i>
         <div data-formrun-show-if-error="メールアドレス">メールアドレスを正しく入力してください</div>
       </div>
     
-      <div>
-        <label>お問い合わせ [必須]</label>
-        <textarea name="お問い合わせ" data-formrun-required></textarea>
+      <div class="form-box">
+        <textarea class="t-area" placeholder="お問い合わせ" data-formrun-required></textarea>
+        <i class="fa fa-question-circle fa-lg fa-fw" aria-hidden="true"></i>
         <div data-formrun-show-if-error="お問い合わせ">お問い合わせ入力してください</div>
       </div>
     
@@ -274,55 +274,7 @@
       <button type="submit" data-formrun-error-text="未入力の項目があります" data-formrun-submitting-text="送信中...">送信</button>
     </form>
     
-
-    <!-- <div id="formWrapper">
-      <div class="formtit"><h2>お問い合わせ</h2></div>
-      <form action="https://docs.google.com/forms/u/0/d/e/1FAIpQLSftr7gS9U_pkzocJ8UST14dLwu8AH1ODao6CrV8oxVraojyHQ/formResponse"  method="post" name="myForm">
-        <input class=""  type="email" name="emailAddress" value="" autocomplete="email" placeholder="メールアドレス（必須）" required>
-        <input class="" type="text" name="entry.2005620554" autocomplete="name" placeholder="名前（必須）" required>
-        <textarea class="" name="entry.839337160" placeholder="お問い合わせ内容（必須）" required></textarea>
-        <input type="submit" value="送信">
-      </form>
-      <iframe name="dummyIframe" style="display:none;" onload="showThxMessage()"></iframe>
-    </div>
-
-    <div id="thxMessage" class="animated fadeIn" style="display:none;">
-      <div class="afterformtit">お問い合わせありがとうございました</div>
-      <div class="formtxt">ご記入いただいたメールアドレス <span style="color:#5B4E42; font-weight:bold;"></span> へ自動返信メールを送信させていただく予定でしたがデモなので送りません。</div>
-    </div> -->
-    <!-- <form action="mailto:bucsojmfa12@gmail.com" method="post" class="form-horizontal">
-        <div class="form-group">
-          <label class="col-sm-3 control-label" for="name1">お名前</label>
-        <div class="col-sm-6">
-          <input type="text" class="form-control" name="">
-        </div>
-        </div>
-    
-        <div class="form-group">
-          <label class="col-sm-3 control-label" for="email">メールアドレス</label>
-        <div class="col-sm-6">
-          <input type="text" class="form-control" name="">
-        </div>
-        </div>
-    
-        <div class="form-group">
-          <label class="col-sm-3 control-label" for="ask1">お問い合わせ内容</label>
-        <div class="col-sm-6">
-        <textarea rows="7" name="" class="form-control"></textarea>
-        </div>
-        </div>
-    
-        <div class="form-group">
-          <label class="col-sm-3"></label>
-        <div class="col-sm-9">
-           <button class="btn btn-default">リセット</button>
-           <button type="submit" class="btn btn-default">送信する</button>
-        </div>
-        </div>
-        
-    </form>
- -->
-
+     <!-- Footer -->
     <footer>
       <div class="text-center">
         &copy; 2019. All Right Reserved, takuya12.github.io
@@ -340,20 +292,6 @@
   <!-- Slick -->
   <script src="js/slick.min.js"></script>
   <script src="js/slider.js"></script>
-
-  <!-- <script>
-    function showThxMessage(){
-      var email = document.myForm.emailAddress.value;
-      if(email !== ''){
-          var thxDiv = document.getElementById('thxMessage');
-          thxDiv.getElementsByTagName('span')[0].innerHTML = email;
-          document.myForm.reset();
-          document.getElementById('formWrapper').style.display = 'none';
-          thxDiv.style.display = 'block';
-      }
-    }
-  </script> -->
-
   <script src="https://sdk.form.run/js/v2/formrun.js"></script>
 
   </body>
