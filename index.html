@@ -245,8 +245,37 @@
       </div>
 
     <!-- Form -->
+    <form class="formrun" action="https://form.run/api/v1/r/gg5amvhof1c2vvhzda1zqlah" method="post">
+      <!-- ↓自由に要素を追加・編集することができます -->
+      <div>
+        <label>お名前</label>
+        <input name="お名前" type="text">
+      </div>
+    
+      <div>
+        <label>メールアドレス [必須]</label>
+        <input name="メールアドレス" type="text" data-formrun-type="email" data-formrun-required>
+        <div data-formrun-show-if-error="メールアドレス">メールアドレスを正しく入力してください</div>
+      </div>
+    
+      <div>
+        <label>お問い合わせ [必須]</label>
+        <textarea name="お問い合わせ" data-formrun-required></textarea>
+        <div data-formrun-show-if-error="お問い合わせ">お問い合わせ入力してください</div>
+      </div>
+    
+      <!-- ボット投稿をブロックするためのタグ -->
+      <div class="_formrun_gotcha">
+        <style media="screen">._formrun_gotcha {position:absolute!important;height:1px;width:1px;overflow:hidden;}</style>
+        <label for="_formrun_gotcha">If you are a human, ignore this field</label>
+        <input type="text" name="_formrun_gotcha" id="_formrun_gotcha" tabindex="-1">
+      </div>
+    
+      <button type="submit" data-formrun-error-text="未入力の項目があります" data-formrun-submitting-text="送信中...">送信</button>
+    </form>
+    
 
-    <div id="formWrapper">
+    <!-- <div id="formWrapper">
       <div class="formtit"><h2>お問い合わせ</h2></div>
       <form action="https://docs.google.com/forms/u/0/d/e/1FAIpQLSftr7gS9U_pkzocJ8UST14dLwu8AH1ODao6CrV8oxVraojyHQ/formResponse"  method="post" name="myForm">
         <input class=""  type="email" name="emailAddress" value="" autocomplete="email" placeholder="メールアドレス（必須）" required>
@@ -260,7 +289,7 @@
     <div id="thxMessage" class="animated fadeIn" style="display:none;">
       <div class="afterformtit">お問い合わせありがとうございました</div>
       <div class="formtxt">ご記入いただいたメールアドレス <span style="color:#5B4E42; font-weight:bold;"></span> へ自動返信メールを送信させていただく予定でしたがデモなので送りません。</div>
-    </div>
+    </div> -->
     <!-- <form action="mailto:bucsojmfa12@gmail.com" method="post" class="form-horizontal">
         <div class="form-group">
           <label class="col-sm-3 control-label" for="name1">お名前</label>
@@ -296,7 +325,7 @@
 
     <footer>
       <div class="text-center">
-        &copy; 2019. All Right Reserved, engineer.takuya.com.
+        &copy; 2019. All Right Reserved, takuya12.github.io
       </div>
     </footer>
       
@@ -325,14 +354,7 @@
     }
   </script> -->
 
-
-<script>
-function sendGform(){
-   document.myForm.submit();
-   document.getElementById('formWrapper').style.display = 'none';
-   document.getElementById('thxMessage').style.display = 'block';
-}
-</script>
+  <script src="https://sdk.form.run/js/v2/formrun.js"></script>
 
   </body>
 </html>
