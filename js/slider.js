@@ -1,3 +1,4 @@
+
 $(function() {
   $('.slick').slick({
     autoplay:true,
@@ -19,3 +20,4 @@ $(function() {
     ]
   });
 });
+
