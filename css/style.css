@@ -324,6 +324,17 @@ blockquote .svg-inline--fa{
   color: #aaaaaa;
 }
 
+.formbtn{
+  width: 100%;
+  line-height: 30px;
+  font-size: 14px;
+  transition: all ease-out .3s;
+  cursor: pointer;
+  text-align: center;
+  background-color: #999999;
+  color: white;
+}
+
 /* Footer */
 
 footer{
